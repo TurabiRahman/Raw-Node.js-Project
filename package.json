@@ -1,0 +1,24 @@
+{
+  "name": "raw-node.js-project",
+  "version": "1.0.0",
+  "description": "Uptime Monitoring API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TurabiRahman/Raw-Node.js-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TurabiRahman/Raw-Node.js-Project/issues"
+  },
+  "homepage": "https://github.com/TurabiRahman/Raw-Node.js-Project#readme",
+  "dependencies": {
+    "lodash": "^4.18.1"
+  }
+}
