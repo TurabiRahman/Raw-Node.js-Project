@@ -21,12 +21,12 @@ fs.readFile('modules.txt', (err, data) => {
     }
 });
 
-const EventEmitter = require('events');
+const School = require('./school');
 
-const emitter = new EventEmitter();
+const mySchool = new School();
 
-emitter.on('bellRing', () => {
-    console.log('The bell is ringing');
+mySchool.on('bellRing', (data) => {
+    console.log(`The bell has rung for the ${data.period} period at ${data.time}`);
 });
 
-emitter.emit('bellRing');
+mySchool.start_period();
