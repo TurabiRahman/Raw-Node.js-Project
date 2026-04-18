@@ -1,14 +1,14 @@
-const path = require('path');
+// const path = require('path');
 
-const myPath = 'C:/Users/USERAS/Downloads/Raw-Node.js-Project/index.js';
+// const myPath = 'C:/Users/USERAS/Downloads/Raw-Node.js-Project/server/index.js';
 
-console.log(path.basename(myPath)); // C:/Users/USERAS/Downloads/Raw-Node.js-Project
-console.log(path.parse(myPath)); // C:/Users/USERAS/Downloads/Raw-Node.js-Project
+// console.log(path.basename(myPath)); // C:/Users/USERAS/Downloads/Raw-Node.js-Project
+// console.log(path.parse(myPath)); // C:/Users/USERAS/Downloads/Raw-Node.js-Project
 
-const os = require('os');
+// const os = require('os');
 
-// console.log(os.platform());
-// console.log(os.cpus());
+// // console.log(os.platform());
+// // console.log(os.cpus());
 
 const fs = require('fs');
 
@@ -29,4 +29,6 @@ mySchool.on('bellRing', (data) => {
     console.log(`The bell has rung for the ${data.period} period at ${data.time}`);
 });
 
-mySchool.start_period();
+//mySchool.start_period()
+
+//C:\Users\USERAS\Downloads\Raw-Node.js-Project\server
