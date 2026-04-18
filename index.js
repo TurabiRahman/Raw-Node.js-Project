@@ -12,7 +12,7 @@ const os = require('os');
 
 const fs = require('fs');
 
-fs.writeFileSync('modules.txt', 'The modules i learnt in Node.js are: os, path, fs');
+fs.writeFileSync('modules.txt', 'The modules i learnt in Node.js are: os, path, fs, events');
 fs.readFile('modules.txt', (err, data) => {
     if (err) {
         console.log(err);
@@ -20,3 +20,13 @@ fs.readFile('modules.txt', (err, data) => {
         console.log(data.toString());
     }
 });
+
+const EventEmitter = require('events');
+
+const emitter = new EventEmitter();
+
+emitter.on('bellRing', () => {
+    console.log('The bell is ringing');
+});
+
+emitter.emit('bellRing');
