@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
     } else {
         res.write('Page not found');
         res.end();
-    } 
+    }
 });
 
 server.listen(3000, () => {
