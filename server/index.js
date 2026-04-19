@@ -8,8 +8,12 @@ const server = http.createServer((req, res) => {
         );
         res.end();
     } else if (req.url === '/process' && req.method === 'POST') {
+        req.on('data', (chunk) => {
+            console.log('Received data chunk:');
+            console.log(chunk);
+        });
         res.write('Welcome to the process page');
-        res.end(); 
+        res.end();
     } else {
         res.write('Page not found');
         res.end();
